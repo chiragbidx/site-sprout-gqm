@@ -6,9 +6,11 @@ import { usePathname } from "next/navigation";
 import {
   ChevronDown,
   Home,
+  Users,
+  Briefcase,
+  Building2,
   Hammer,
   Settings,
-  Users,
 } from "lucide-react";
 import {
   Collapsible,
@@ -25,20 +27,17 @@ type NavItem = {
 
 const sections: { title: string; items: NavItem[] }[] = [
   {
-    title: "Platform",
+    title: "CRM",
     items: [
-      { label: "Overview", href: "/dashboard", icon: Home },
-      {
-        label: "Feature",
-        href: "/dashboard/feature",
-        icon: Hammer,
-      },
+      { label: "Dashboard", href: "/dashboard", icon: Home },
+      { label: "Contacts", href: "/dashboard/contacts", icon: Users },
+      { label: "Companies", href: "/dashboard/companies", icon: Building2 },
+      { label: "Deals", href: "/dashboard/deals", icon: Briefcase },
     ],
   },
   {
     title: "Account",
     items: [
-      { label: "Team", href: "/dashboard/team", icon: Users },
       { label: "Settings", href: "/dashboard/settings", icon: Settings },
     ],
   },
