@@ -23,9 +23,6 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 
-// Purpose: Client UI for /dashboard/settings.
-// Use this file for interactive form and browser-only settings UI logic.
-
 type ClientProps = {
   user: {
     firstName: string;
@@ -60,7 +57,7 @@ export default function Client({ user, status, message }: ClientProps) {
       <div className="mb-8">
         <h1 className="text-2xl font-semibold tracking-tight">Settings</h1>
         <p className="mt-1 text-sm text-muted-foreground">
-          Manage your account profile, email, and security.
+          Manage your DealNest account profile, email, and security.
         </p>
       </div>
 
@@ -119,7 +116,7 @@ export default function Client({ user, status, message }: ClientProps) {
               <CardTitle className="text-base">Profile</CardTitle>
             </div>
             <CardDescription>
-              Update your personal details. This is how others will see you.
+              Update your personal details. This is how your team will see you in DealNest.
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -173,7 +170,7 @@ export default function Client({ user, status, message }: ClientProps) {
               <CardTitle className="text-base">Email Address</CardTitle>
             </div>
             <CardDescription>
-              Change the email address associated with your account.
+              Change the email address associated with your DealNest account.
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -217,7 +214,7 @@ export default function Client({ user, status, message }: ClientProps) {
               <CardTitle className="text-base">Password</CardTitle>
             </div>
             <CardDescription>
-              Update your password to keep your account secure.
+              Update your password to keep your DealNest account secure.
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -274,7 +271,7 @@ export default function Client({ user, status, message }: ClientProps) {
               </CardTitle>
             </div>
             <CardDescription>
-              Permanently delete your account and all associated data. This
+              Permanently delete your DealNest account and all associated data. This
               action is irreversible.
             </CardDescription>
           </CardHeader>
